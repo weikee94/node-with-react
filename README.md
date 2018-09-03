@@ -3,9 +3,14 @@ Init Project
 - npm install --save express
 - git init
 
+Deploy Heroku
+- heroku login
+- heroku create
+- git push heroku master
+- heroku open
+- heroku logs (some deployment message)
 
-Heroku Deployment 
-- 
+Intro To Google Auth
 
 
 Tech Using
