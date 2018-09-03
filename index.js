@@ -13,15 +13,13 @@
 // const express = require('express');
 
 const express = require('express');
+require('./services/passport');
 
 const app = express();
 
-// route handler
-app.get('/', (req, res) => {
-    res.send({
-        hi: 'there'
-    });
-})
+// this will call the item from authRoutes
+// first return a function, second invoke the app object
+require('./routes/authRoutes')(app);
 
 // for heroku listen
 const PORT = process.env.PORT || 5000;
