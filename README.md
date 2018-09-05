@@ -27,6 +27,22 @@ Tech Using
 - Passport JS
 - Stripe
 
+MongoDB Setup
+- go to mlab create a remote database instead in local machine
+- npm install --save mongoose
+- create mongoURI in config keys
+
+Create Model Class
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/modelClass.png "Model Class")
+
+Saving Model Instances
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/savingModelInstance.png "Saving Model Instance")
+
+Passport Callbacks Example
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/passportCallback.png "Passport Callback")
+
+
+
 
 
 

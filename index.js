@@ -13,7 +13,16 @@
 // const express = require('express');
 
 const express = require('express');
+const mongoose = require('mongoose');
+const keys = require('./config/keys');
+require('./models/User');
 require('./services/passport');
+
+mongoose.connect(keys.mongoURI).then(() => {
+    console.log("Yeah");
+}, (e) => {
+    console.log(e);
+});
 
 const app = express();
 

@@ -1,6 +1,11 @@
 const passport = require('passport');
 
 module.exports = (app) => {
+        
+    app.get('/auth/google/callback', 
+        passport.authenticate('google')
+    )
+
     app.get('/auth/google', 
             // authenticate string is the strategy name 
             passport.authenticate('google', {
@@ -8,8 +13,4 @@ module.exports = (app) => {
             scope: ['profile', 'email']
         })
     );
-    
-    app.get('/auth/google/callback', 
-        passport.authenticate('google')
-    )
 }
