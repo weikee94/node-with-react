@@ -4,6 +4,9 @@ Init Project
 - git init
 - npm install --save nodemon
 
+API endpoints Testing
+- https://rallycoding.herokuapp.com/api/music_albums
+
 Deploy Heroku
 - heroku login
 - heroku create
@@ -51,6 +54,22 @@ Heroku Env Variables
 
 Heroku Proxy Issues
 - add proxy: true to google strategy
+
+React App Generation
+- inside root directory
+- create-react-app theFolderName
+
+Running Client and Server
+- npm install --save concurrently
+- prefix will go back client folder and search that command
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/runningbothserver.png "Running Both Server")
+
+Link Frontend Server to Express
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/linktoexpress.png "Link to Express")
+
+Client React Setup
+- npm install --save redux react-redux react-router-dom
+ 
 
 
 
