@@ -49,8 +49,8 @@ Enabling Cookies
 Heroku Env Variables
 ![Image](https://github.com/weikee94/node-with-react/blob/master/images/herokuconfig.png "Heroku Config")
 
-
-
+Heroku Proxy Issues
+- add proxy: true to google strategy
 
 
 
