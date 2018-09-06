@@ -15,16 +15,40 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
+
+// import cookiesession and passport
+// imform passport use cookies to keep track
+const cookieSession = require('cookie-session');
+const passport = require('passport');
+
 require('./models/User');
 require('./services/passport');
 
 mongoose.connect(keys.mongoURI).then(() => {
-    console.log("Yeah");
+    console.log("Connected");
 }, (e) => {
     console.log(e);
 });
 
 const app = express();
+
+app.use(
+    cookieSession({
+       // maxAge is how long the cookies can 
+       // inside browser
+       // need to be mili seconds 
+       maxAge: 30*24*60*60*1000,
+       keys: [
+           keys.cookieKey
+       ]
+    })
+)
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+
 
 // this will call the item from authRoutes
 // first return a function, second invoke the app object

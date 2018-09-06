@@ -2,15 +2,25 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 const mongoose = require('mongoose');
+const keys = require('../config/keys');
 
 const User = mongoose.model('users');
-
-const keys = require('../config/keys');
 
 // telling passport make use of the google strategy
 // take two params: client id, and client secret
 // client ID: this is public token
 // client secret: this is private token, dont expose this one
+
+
+passport.serializeUser((user, done) => {
+    done(null, user.id);
+})
+
+passport.deserializeUser((id, done) => {
+    User.findById(id).then((user) => {
+        done(null, user);
+    })
+})
 
 passport.use(new GoogleStrategy(
     {

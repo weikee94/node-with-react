@@ -41,6 +41,11 @@ Saving Model Instances
 Passport Callbacks Example
 ![Image](https://github.com/weikee94/node-with-react/blob/master/images/passportCallback.png "Passport Callback")
 
+Enabling Cookies
+- npm install --save cookie-session
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/enablecookie.png "Enable Cookie")
+
+
 
 
 
