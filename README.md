@@ -10,6 +10,7 @@ Deploy Heroku
 - git push heroku master
 - heroku open
 - heroku logs (some deployment message)
+- https://calm-shelf-29855.herokuapp.com/
 
 Intro To Google OAuth
 - need install passport and relative passport strategies
@@ -45,6 +46,8 @@ Enabling Cookies
 - npm install --save cookie-session
 ![Image](https://github.com/weikee94/node-with-react/blob/master/images/enablecookie.png "Enable Cookie")
 
+Heroku Env Variables
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/herokuconfig.png "Heroku Config")
 
 
 

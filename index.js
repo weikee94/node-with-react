@@ -47,9 +47,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-
-
 // this will call the item from authRoutes
 // first return a function, second invoke the app object
 require('./routes/authRoutes')(app);
