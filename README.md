@@ -69,7 +69,9 @@ Link Frontend Server to Express
 
 Client React Setup
 - npm install --save redux react-redux react-router-dom
- 
+- redux store setup
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/storesetup.png "Store Setup")
+
 
 
 
