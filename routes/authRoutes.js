@@ -3,7 +3,10 @@ const passport = require('passport');
 module.exports = (app) => {
         
     app.get('/auth/google/callback', 
-        passport.authenticate('google')
+        passport.authenticate('google'),
+        (req, res) => {
+            res.redirect('/data');
+        }
     )
 
     app.get('/auth/google', 

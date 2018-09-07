@@ -72,6 +72,14 @@ Client React Setup
 - redux store setup
 ![Image](https://github.com/weikee94/node-with-react/blob/master/images/storesetup.png "Store Setup")
 
+Setup Auth Reducer
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/authreducer.png "Auth Reducer")
 
+Combine Reducers
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/storesetup.png "Combine Reducers")
 
+Install MeterializeCSS
+- npm install materialize-css
 
+Install Axios and Redux Thunk 
+- npm install --save axios redux-thunk
