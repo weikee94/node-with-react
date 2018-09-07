@@ -2,9 +2,11 @@ import axios from 'axios';
 import { FETCH_USER } from './types';
 
 export const fetchUser = () => 
-    // dispatch the action after the req success
+    // dispatch the action after 
+    // the req success
     async (dispatch) => {
-       const res = await axios.get('/api/current_user'); dispatch({ type: FETCH_USER, payload: res.data });
+       const res = await axios.get('/api/current_user'); 
+       dispatch({ type: FETCH_USER, payload: res.data });
     }
 
     // FETCH Example

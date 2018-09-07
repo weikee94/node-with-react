@@ -69,7 +69,8 @@ Link Frontend Server to Express
 
 Client React Setup
 - npm install --save redux react-redux react-router-dom
-- redux store setup
+
+Redux store setup
 ![Image](https://github.com/weikee94/node-with-react/blob/master/images/storesetup.png "Store Setup")
 
 Setup Auth Reducer
@@ -83,3 +84,12 @@ Install MeterializeCSS
 
 Install Axios and Redux Thunk 
 - npm install --save axios redux-thunk
+
+Action Creator
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/actioncreator.png "Action Creator")
+
+Return State
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/returnstate.png "Return State")
+
+Connect To Component
+![Image](https://github.com/weikee94/node-with-react/blob/master/images/connect.png "Connect")
