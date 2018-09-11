@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from './Header';
+import Landing from './Landing';
 
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 const Data = () => <div>Data</div>;
-
-const Landing = () => <div>Landing</div>;
 
 const SurveyNew = () => <div>Survey New</div>
 
@@ -25,7 +24,7 @@ class App extends Component  {
                     <div>
                         <Header />
                         <Route path="/" component={Landing} exact />
-                        <Route exact path="/data" component={Data} />
+                        <Route exact path="/surveys" component={Data} />
                         <Route exact path="/data/new" component={SurveyNew} />
                     </div>
                 </BrowserRouter>

@@ -93,3 +93,25 @@ Return State
 
 Connect To Component
 ![Image](https://github.com/weikee94/node-with-react/blob/master/images/connect.png "Connect")
+
+Stripe API
+- npm install --save react-stripe-checkout (frontend)
+- npm install --save stripe (server)
+
+ENV Variables with React
+- create .env.development
+- create .env.production
+
+Body Parser Middleware
+- parse incoming request bodies in a middlewares before handlers, available under the req.body
+- npm install --save body-parser
+
+Route Specific Middleware
+- ![Image](https://github.com/weikee94/node-with-react/blob/master/images/requireLogin.png "requireLogin")
+
+Express with Create-React-App Production
+- ![Image](https://github.com/weikee94/node-with-react/blob/master/images/differentroute.png "different route")
+
+Adding Heroku Build Step
+- Can try CIRCLE CI
+- ![Image](https://github.com/weikee94/node-with-react/blob/master/images/herokubuild.png "heroku build")

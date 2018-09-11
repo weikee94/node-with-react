@@ -20,6 +20,7 @@ const keys = require('./config/keys');
 // imform passport use cookies to keep track
 const cookieSession = require('cookie-session');
 const passport = require('passport');
+const bodyParser = require('body-parser');
 
 require('./models/User');
 require('./services/passport');
@@ -47,9 +48,26 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+// app.use for middleware
+app.use(bodyParser.json());
+
 // this will call the item from authRoutes
 // first return a function, second invoke the app object
 require('./routes/authRoutes')(app);
+require('./routes/billingRoutes')(app);
+
+if (process.env.NODE_ENV === 'production') {
+    // Make sure express will serve up production assets
+    // like our main.js and main.css file 
+    app.use(express.static('client/build'));
+
+    // Express will serve up index.html 
+    // if it doesnt recognize route
+    const path = require('path');
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    })
+}
 
 // for heroku listen
 const PORT = process.env.PORT || 5000;
