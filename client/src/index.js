@@ -21,5 +21,5 @@ ReactDOM.render(
 );
 
 
-console.log('Strip key', process.env.REACT_APP_STRIPE_KEY);
-console.log('ENv', process.env.NODE_ENV);
+console.log('Stripe key: ', process.env.REACT_APP_STRIPE_KEY);
+console.log('Environment: ', process.env.NODE_ENV);
